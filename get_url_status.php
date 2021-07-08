@@ -1,5 +1,5 @@
 <?php
-$url = "https://in.bookmyshow.com";
+$url = "https://www.example.com";
 function get_url_status($url)
 {
     if(strpos(@get_headers($url,1)[0], "200"))
