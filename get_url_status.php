@@ -1,5 +1,14 @@
 <?php
-$url = "https://www.example.com";
+if(empty($argv[1]))
+{
+    echo "No url passed.";
+    exit;
+}
+else
+{
+    $url = "https://".$argv[1];
+}
+// $url = "https://www.example.com";
 function get_url_status($url)
 {
     if(strpos(@get_headers($url,1)[0], "200"))
